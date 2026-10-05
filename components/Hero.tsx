@@ -12,7 +12,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   return (
-    <section ref={ref} className="relative h-screen min-h-[700px] flex flex-col items-center justify-center overflow-hidden">
+    <section ref={ref} className="relative h-screen min-h-[700px] flex flex-col items-center justify-center overflow-hidden [@media(min-width:768px)_and_(max-height:1100px)]:pt-20 [@media(min-width:768px)_and_(max-height:1100px)]:!h-auto [@media(min-width:768px)_and_(max-height:1100px)]:!min-h-screen">
       {/* Parallax background video */}
       <motion.div className="absolute inset-0" style={{ y: imgY }}>
         <video
